@@ -1,0 +1,23 @@
+[logstreamer]
+logFilePath = "/path/logfile.log"
+pollInterval = 200
+workerCores  = [46,47]
+enable_output_aggregator = true
+
+[exporter]
+enable_http = true
+http_port = 10001
+enable_push = false
+push_gateway_url = ""
+push_interval = 10
+
+
+[[logstreamer.filters]]
+name = "name1"
+pattern = "reg_exp_pattern1"
+template = "tpl_vars1"
+
+[[logstreamer.filters]]
+name = "name2"
+pattern = "reg_exp_pattern2"
+template = "tpl_vars2"
