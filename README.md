@@ -1,5 +1,5 @@
 # logstreamer
-stream your log file in real time
+stream your log file in real time. its still in beta
 
 # setup
 ```
